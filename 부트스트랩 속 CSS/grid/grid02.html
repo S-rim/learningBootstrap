@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <!-- Bootstrap -->
+    <link href="./../../bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  border: 1px solid red;
+  padding: 10px;
+}
+.row{
+  margin-bottom: 4px;
+  margin-top: 4px;
+  }
+.innerGrid
+{
+    background-color: rgb(203, 168, 236);
+    border: 1px solid blueviolet;
+}
+    </style>
+</head>
+<body>
+    <!-- 그리드 안에 내부 그리드를 또 생성할 수 있다. 또한 모든 그리드는 offset이 가능하다.
+    그리드와 그리드 사이를 띄울 수 있다는 뜻이다. 그리드 시스템은 항상 합이 12가 되어야한다. -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                .col-md-6
+                <div class="row">
+                    <div class="col-md-4 innerGrid">그리드 안에 그리드 넣기</div>
+                    <div class="col-md-2 innerGrid">그리드지롱</div> 
+                    <div class="col-md-4 innerGrid">또 그리드</div>
+                    <div class="col-md-2 innerGrid">나도 그리드</div>   
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">.col-md-4</div>
+            <div class="col-md-offset-2 col-md-6">.col-md-6</div>
+        </div>
+    </div>
+</body>
+</html>
