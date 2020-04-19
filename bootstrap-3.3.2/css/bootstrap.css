@@ -10,8 +10,10 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+/* 커스텀css 말고 여기서 직접 지정해도 되지만, 지양하는 게 좋음. */
 body {
   margin: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, "맑은 고딕", "Malgun gothic", sans-serif;
 }
 article,
 aside,

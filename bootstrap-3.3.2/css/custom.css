@@ -1,0 +1,12 @@
+/* 모든 브라우저에서 똑같은 글꼴로 보이게하기 */
+@font-face
+{
+    font-family: "NanumGothic";
+    src:url("NanumGothic.eot");
+    src:local(""), url("NanumGothic.woff") format("woff");
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, Helvetica, "맑은 고딕", "Malgun gothic", sans-serif;
+  }
