@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>부트스트랩의 폼</title>
+    <link rel="stylesheet" href="./../../bootstrap-3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- form의 role속성은 컴퓨터 화면 리더기에 이 부분이 폼 부분이다 라고 읽힐 수 있게 해준다. -->
+    <div class="container">
+        <h4 class="text-primary">기본 폼 그룹</h4>
+        <form role="form">
+            <label for="Name">이름</label>
+            <input type="text" placeholder="이름을 입력하세요">   
+            <label for="emailaddress">이메일 주소</label>
+            <input type="email" placeholder="이메일을 입력하세요">
+            <button type="submit">확인</button>
+        </form>
+
+        <h4 class="text-primary">부트스트랩으로 폼 변형</h4>
+        <form role="form">
+            <label for="Name">이름</label>
+            <input type="text" class="form-control" placeholder="이름을 입력하세요">    
+            <label for="emailaddress">이메일 주소</label>
+            <input type="email" class="form-control" placeholder="이메일을 입력하세요">
+            <button type="submit">확인</button>
+        </form>
+    </div>
+</body>
+</html>
