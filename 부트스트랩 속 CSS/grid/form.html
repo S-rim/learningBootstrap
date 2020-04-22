@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./../../bootstrap-3.3.2/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- form의 role속성은 컴퓨터 화면 리더기에 이 부분이 폼 부분이다 라고 읽힐 수 있게 해준다. -->
+    <!-- form의 role속성은 컴퓨터 화면 리더기에 이 부분이 폼 부분이다 라고 읽힐 수 있게 해준다. 
+    .sr-only 선택자는 라벨을 화면상에선 보여주지 않고 리더기만 읽을 수 있게 해준다. 
+    폼을 인라인으로 보이고 싶을 때는 form-inline 클래스를, 수평으로 보이고 싶을 때는 form-horizontal 클래스를
+    사용한다. -->
     <div class="container">
         <h4 class="text-primary">기본 폼 그룹</h4>
         <form role="form">
@@ -18,7 +21,7 @@
             <input type="email" placeholder="이메일을 입력하세요">
             <button type="submit">확인</button>
         </form>
-
+        <hr>
         <h4 class="text-primary">부트스트랩으로 폼 변형</h4>
         <form role="form">
             <label for="Name">이름</label>
@@ -26,6 +29,36 @@
             <label for="emailaddress">이메일 주소</label>
             <input type="email" class="form-control" placeholder="이메일을 입력하세요">
             <button type="submit">확인</button>
+        </form>
+        <hr>
+        <h4 class="text-primary">부트스트랩으로 인라인 폼</h4>
+        <form class="form-inline" role="form">
+            <label for="Name">이름</label>
+            <input type="text" class="form-control" placeholder="이름을 입력하세요">    
+            <label for="emailaddress">이메일 주소</label>
+            <input type="email" class="form-control" placeholder="이메일을 입력하세요">
+            <button type="submit">확인</button>
+        </form>
+        <hr>
+        <h4 class="text-primary">부트스트랩으로 수평 폼</h4>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">   
+                <label for="Name" class="col-xs-2 col-lg-2 control-label">이름</label>
+                <div class="col-xs-10 col-lg-10">
+                    <input type="text" class="form-control" placeholder="이름"> 
+                </div>
+            </div>       
+            <div class="form-group">  
+                <label for="emailaddress" class="col-xs-2 col-lg-2 control-label">이메일</label>
+                <div class="col-xs-10 col-lg-10">
+                    <input type="email" class="form-control" placeholder="이메일"> 
+                </div>
+              </div> 
+            <div class="form-group">  
+                <div class="col-xs-offset-2 col-xs-10 col-lg-offset-2 col-lg-10 ">   
+                    <button type="submit"> 확인</button>    
+                </div>
+            </div>    
         </form>
     </div>
 </body>
