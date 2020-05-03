@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../bootstrap-3.3.2/css/bootstrap.min.css">
+    <title>부트스트랩의 드롭다운</title>
+</head>
+<body>
+    <div class="container">
+        <h3>기본 드롭다운</h3>
+        <div class="dropdown">
+            <a data-toggle="dropdown" href="#">여기를 클릭하세요.</a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">메뉴 1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">메뉴 2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">메뉴 3</a></li>  
+                <li class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">분리된 메뉴</a></li> 
+            </ul>
+        </div>
+        <hr>
+        <h3>data-toggle="dropdown"을 하지 않으면 안생김</h3>
+        <div class="dropdown">
+            <!-- <a data-toggle="dropdown" href="#">여기를 클릭하세요.</a> -->
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">메뉴 1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">메뉴 2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">메뉴 3</a></li>  
+                <li class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">분리된 메뉴</a></li> 
+            </ul>
+        </div>
+        <hr>
+        <h3>pull-right로 위치 조정하기</h3>
+        <div class="dropdown">
+            <button class="btn btn-default" data-toggle="dropdown">여기를 클릭하세요.</button>
+            <ul class="dropdown-menu pull-right">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </div>
+        <hr>
+        <h3>header 추가</h3>
+        <div class="dropdown">
+            <a href="#" data-toggle="dropdown">여기를 클릭하셈</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">제목</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="dropdown-header">내용</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+            </ul>
+        </div>
+        <hr>
+        <h3>disabled 사용</h3>
+        <div class="dropdown">
+            <a href="#" data-toggle="dropdown">여기를 클릭하셈</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">제목</li>
+                <li class="disabled"><a href="#">사용 못하는 1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="dropdown-header">내용</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 드롭다운 메뉴는 단독으로 사용할 수는 없고 부트스트랩에 포함된 js와 제이쿼리가 같이 있어야 함 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./../bootstrap-3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
