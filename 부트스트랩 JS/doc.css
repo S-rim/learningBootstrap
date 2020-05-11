@@ -1,0 +1,20 @@
+body
+{
+    position: relative;
+}
+
+.scrollspy-example
+{
+    position: relative;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.example
+{
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 223, 223);
+}
